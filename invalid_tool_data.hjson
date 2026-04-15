@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Verilator"
+        "vendor": "Veripool"
+        "version": "v5.0.42"
+    }
+    {
+        "name": "FuseSoC"
+        "vendor": "olofk"
+        "source-url": "https://github.com/olofk/fusesoc"
+        "doc-url": "https://fusesoc.readthedocs.io/en/stable/index.html"
+        "comment": '''
+            FuseSoC is a build system for digital hardware (e.g. Verilog or VHDL designs),
+            and a package manager for reusable blocks in hardware designs.
+        '''
+    }
+]
