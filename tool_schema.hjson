@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema"
-    "$id": "tool-schema"
+    "$id": "https://raw.githubusercontent.com/lowRISC/tool-schema/refs/heads/main/tool_schema.hjson"
     "description": "Tool version definitions for lowRISC projects."
     "title": "Tool version schema"
     "type": "array"
