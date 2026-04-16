@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/lowRISC/tool-schema/refs/heads/main/tool_schema.json",
+    "description": "Tool version definitions for lowRISC projects.",
+    "title": "Tool version schema",
+    "type": "array",
+    "items": {
+        "title": "Tool",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "Name of tool (e.g. Verilator)."
+            },
+            "vendor": {
+                "type": "string",
+                "description": "Vendor of the tool (e.g. Veripool)."
+            },
+            "version": {
+                "type": "string",
+                "description": "The exact version string (e.g. v5.0.42)."
+            },
+            "source-url": {
+                "type": "string",
+                "description": "Optional: URL to the source code of the tool."
+            },
+            "doc-url": {
+                "type": "string",
+                "description": "Optional: URL to the documentation of the tool."
+            },
+            "comment": {
+                "type": "string",
+                "description": "Optional: Any other notes or information."
+            }
+        },
+        "required": ["name", "vendor", "version"]
+    }
+}

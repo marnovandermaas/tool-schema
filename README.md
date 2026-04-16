@@ -7,12 +7,12 @@ Tested with [modified ajv](https://github.com/marnovandermaas/ajv-cli).
 ## Tests:
 
 ```
-> node ajv-cli/dist/index.js --spec=draft2020 -s tool_schema.hjson -d valid_tool_data.hjson
+> node ajv-cli/dist/index.js --spec=draft2020 -s tool_schema.json -d valid_tool_data.hjson
 valid_tool_data.hjson valid
 ```
 
 ```
-> node ajv-cli/dist/index.js --spec=draft2020 -s tool_schema.hjson -d invalid_tool_data.hjson
+> node ajv-cli/dist/index.js --spec=draft2020 -s tool_schema.json -d invalid_tool_data.hjson
 invalid_tool_data.hjson invalid
 [
   {
