@@ -2,17 +2,17 @@
 
 This is a machine and human readable schema for specifying tools in a project.
 
-Tested with [pajv](https://github.com/json-schema-everywhere/pajv).
+Tested with [modified ajv](https://github.com/marnovandermaas/ajv-cli).
 
 ## Tests:
 
 ```
-> pajv -s tool_schema.hjson -d valid_tool_data.hjson
+> node ajv-cli/dist/index.js -s tool_schema.hjson -d valid_tool_data.hjson
 valid_tool_data.hjson valid
 ```
 
 ```
-> pajv -s tool_schema.hjson -d invalid_tool_data.hjson
+> node ajv-cli/dist/index.js -s tool_schema.hjson -d invalid_tool_data.hjson
 invalid_tool_data.hjson invalid
 [
   {
