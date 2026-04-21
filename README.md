@@ -2,18 +2,18 @@
 
 This is a machine and human readable schema for specifying tools in a project.
 
-Tested with [modified ajv](https://github.com/marnovandermaas/ajv-cli).
+Tested with ajv: `npm install -g ajv-cli`
 
 ## Tests:
 
 ```
-> node ajv-cli/dist/index.js --spec=draft2020 -s tool_schema.json -d valid_tool_data.hjson
-valid_tool_data.hjson valid
+> ajv --spec=draft2020 -s tool_schema.json -d valid_tool_data.json
+valid_tool_data.json valid
 ```
 
 ```
-> node ajv-cli/dist/index.js --spec=draft2020 -s tool_schema.json -d invalid_tool_data.hjson
-invalid_tool_data.hjson invalid
+> ajv --spec=draft2020 -s tool_schema.json -d invalid_tool_data.json
+invalid_tool_data.json invalid
 [
   {
     keyword: 'required',
